@@ -1,0 +1,23 @@
+{
+    "serviceName" : "payments",
+    "description" : "servicio de pagos",
+    "notification" : {
+        "providers" : [
+            {
+                "name" : "SLACK",
+                "webhooks" : [
+                    {
+                        "name" : "payments-alerts",
+                        "webhook" : "https://hooks.slack.com/services/EXAMPLE1",
+                        "enable" : true
+                    },
+                    {
+                        "name" : "all-alerts",
+                        "webhook" : "https://hooks.slack.com/services/example2",
+                        "enable" : true
+                    }
+                ]
+            }
+        ]
+    }
+}
